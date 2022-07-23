@@ -1,4 +1,3 @@
-/*
 #include <stdio.h>
 #include <string.h>
 #include <ctype.h>
@@ -57,5 +56,5 @@ int binsearch(char *word, struct key keytab[], int tablen){
     return -1;
 }
 
-*/
+
 
