@@ -61,7 +61,7 @@ int StackFull(Stack S){
 
 /* GetTop: 取栈顶元素，并用*ep返回 */
 int GetTop(Stack S, ElemType *ep){
-    if (StackEmpty){
+    if (StackEmpty(S)){
         printf("Stack is empty\n");
         return 0;
     }
