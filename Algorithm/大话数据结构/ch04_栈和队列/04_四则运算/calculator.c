@@ -70,9 +70,9 @@ int CalPostfix(char *s){
     fillbuff(s);
 
     while ((c = getword(word, MAXWORD)) != EOF){
-        if (isdigit(c)){
+        if (isdigit(c)){                            /* 如果为数字，压入栈 */
             Push(sp, atoi(word));
-        } else if (strchr("+-/*", c)){
+        } else if (strchr("+-/*", c)){              /* 如果为四则运算符，弹出栈顶数字进行计算 */
             OpCal(c, sp);
         } else {
             printf("Error: wrong operator\n");
@@ -81,7 +81,7 @@ int CalPostfix(char *s){
     }
     clearfill();
 
-    Pop(sp, &op);
+    Pop(sp, &op);                                   /* 弹出栈顶数字，输出*/
     return op;
 }
 
