@@ -27,7 +27,10 @@ void PrintVertexes(MGraph G);
 void PrintEdges(MGraph G);
 void PrintMatrix(MGraph G);
 
+void DFS(MGraph G, int loc);
+void DFSTraverse(MGraph G);
 
+void BFSTraverse(MGraph G);
 
 
 
