@@ -49,6 +49,22 @@ main(){
     PrintVertexes(*gp);
     PrintEdges(*gp);
     PrintMatrix(*gp);
+    
+    /* 深度遍历 */
+    printf("\n==============================DFS============================\n");
+    char *ch, *e1, *e2;
+    int k;
+    
+    ch = "CDEFGHI";
+    for (k = 0; k < 7; k++)
+        InsertVex(gp, *(ch + k));
+
+    e1 = "BBCDDDDDGAFBHF";
+    e2 = "CIICIGHEHFGGEE";
+    for (k = 0; k < 14; k++)
+        InsertEdge(gp, *(e1 + k), *(e2 + k), 1);
+
+    DFSTraverse(*gp);
 }
 
 
