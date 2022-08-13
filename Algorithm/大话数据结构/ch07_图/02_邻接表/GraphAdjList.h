@@ -37,7 +37,8 @@ void PrintEdges(GraphAdjList G);
 void PrintAdjList(GraphAdjList G);
 
 
-
+void DFS(GraphAdjList G, int loc);
+void DFSTraverse(GraphAdjList G);
 
 
 
