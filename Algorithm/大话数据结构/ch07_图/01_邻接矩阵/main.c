@@ -50,7 +50,7 @@ main(){
     PrintEdges(*gp);
     PrintMatrix(*gp);
     
-    /* 深度遍历 */
+    /* 深度优先遍历 */
     printf("\n==============================DFS============================\n");
     char *ch, *e1, *e2;
     int k;
@@ -65,6 +65,10 @@ main(){
         InsertEdge(gp, *(e1 + k), *(e2 + k), 1);
 
     DFSTraverse(*gp);
+    
+    /* 广度优先遍历 */
+    printf("\n==============================BFS============================\n");
+    BFSTraverse(*gp);
 }
 
 
