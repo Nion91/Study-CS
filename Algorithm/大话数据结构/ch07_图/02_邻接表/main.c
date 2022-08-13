@@ -59,6 +59,32 @@ main(){
     PrintEdges(*ap);
     printf("\n");
     PrintAdjList(*ap);
+
+    /* 深度遍历 */
+    printf("\n==============================DFS============================\n");
+    char *ch;
+    int k;
+    
+    ch = "CDEFGHI";
+    for (k = 0; k < 7; k++)
+        InsertVex(ap, *(ch + k));
+    
+    InsertEdge(ap, 'B', 'C', 1);
+    InsertEdge(ap, 'B', 'I', 1);
+    InsertEdge(ap, 'C', 'I', 1);
+    InsertEdge(ap, 'D', 'C', 1);
+    InsertEdge(ap, 'D', 'I', 1);
+    InsertEdge(ap, 'D', 'G', 1);
+    InsertEdge(ap, 'D', 'H', 1);
+    InsertEdge(ap, 'D', 'E', 1);
+    InsertEdge(ap, 'G', 'H', 1);
+    InsertEdge(ap, 'A', 'F', 1);
+    InsertEdge(ap, 'F', 'G', 1);
+    InsertEdge(ap, 'B', 'G', 1);
+    InsertEdge(ap, 'H', 'E', 1);
+    InsertEdge(ap, 'F', 'E', 1);
+
+    DFSTraverse(*ap);
 }
 
 
