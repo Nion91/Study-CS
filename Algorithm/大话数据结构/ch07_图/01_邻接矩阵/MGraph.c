@@ -85,7 +85,12 @@ int LocateVertex(MGraph G, VertexType v){
 /* InsertVex: 在图中新增顶点v */
 void InsertVex(MGraph *gp, VertexType v){
     int i;
-
+    
+    if (HasVertex(*gp, v)){
+        printf("Error: already has %c\n", v);
+        return;
+    }
+    
     gp->vexs[gp->numVertexes] = v;
     gp->numVertexes++;
 
