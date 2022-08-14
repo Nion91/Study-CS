@@ -40,7 +40,7 @@ void PrintAdjList(GraphAdjList G);
 void DFS(GraphAdjList G, int loc);
 void DFSTraverse(GraphAdjList G);
 
-
+void BFSTraverse(GraphAdjList G);
 
 
 
