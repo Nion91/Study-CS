@@ -60,7 +60,7 @@ main(){
     printf("\n");
     PrintAdjList(*ap);
 
-    /* 深度遍历 */
+    /* 深度优先遍历 */
     printf("\n==============================DFS============================\n");
     char *ch;
     int k;
@@ -85,6 +85,10 @@ main(){
     InsertEdge(ap, 'F', 'E', 1);
  
     DFSTraverse(*ap);
+     
+    /* 广度优先遍历 */
+    printf("\n==============================BFS============================\n");
+    BFSTraverse(*ap);
 }
 
 
