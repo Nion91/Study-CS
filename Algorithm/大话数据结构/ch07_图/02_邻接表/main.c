@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "GraphAdjList.h"
-
+#include "SqQueue.h"
 
 main(){
      GraphAdjList *ap;    
