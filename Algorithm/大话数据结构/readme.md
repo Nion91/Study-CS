@@ -36,3 +36,6 @@
 * 最小生成树
   - Prim
   - Kruskal
+* 最短路径
+  - Dijkstra
+  - FLoyd
