@@ -114,6 +114,7 @@ void InsertEdge(MGraph *gp, VertexType v1, VertexType v2, EdgeType e){
     }
 
     gp->arc[loc1][loc2] = gp->arc[loc2][loc1] = e;
+    gp->numEdges++;
 }
 
 
