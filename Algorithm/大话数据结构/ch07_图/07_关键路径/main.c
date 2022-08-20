@@ -82,4 +82,28 @@ main(){
     /*TopologicalSort(ap);*/
     TopologicalSort_2(ap);
 
+    /* 关键路径 */
+    printf("\n==============================key_path============================\n");
+    /* 初始化输入：
+    2, 1
+    01
+    0, 1, 3
+    */
+    int w[] = {4, 5, 6, 8, 7, 3, 9, 4, 6, 2, 5, 3};
+    ap = CreateALGraph();
+
+    ch = "23456789";
+    for (k = 0; k < strlen(ch); k++)
+        InsertVex(ap, *(ch + k));
+
+    e1 = "011223445678";
+    e2 = "234354677989";
+    for (k = 0; k < strlen(e1); k++)
+        InsertEdge(ap, *(e1 + k), *(e2 + k), w[k]);
+
+    PrintAdjList(*ap);
+
+    printf("\n");
+    printf("key_path: \n");
+    CriticalPath(*ap);
 }
