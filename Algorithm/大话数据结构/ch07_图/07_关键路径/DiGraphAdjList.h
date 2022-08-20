@@ -39,7 +39,12 @@ void PrintEdges(DiGraphAdjList G);
 void PrintAdjList(DiGraphAdjList G);
 
 
+/* 拓扑排序 */
 int TopologicalSort(DiGraphAdjList *dp);
 int TopologicalSort_2(DiGraphAdjList *gl);
+
+/* 关键路径 */
+int TopologicalSort_KeyPath(DiGraphAdjList *gl);
+void CriticalPath(DiGraphAdjList G);
 
 
